@@ -1,0 +1,27 @@
+# Large model files
+basic_cnn_tree_species.h5
+
+# Large data files
+5M_trees/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.venv
+env/
+venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
