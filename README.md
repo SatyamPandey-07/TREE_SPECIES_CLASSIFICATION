@@ -44,7 +44,13 @@ The **Tree Species Classification & Intelligence Assistant** is a comprehensive 
 Built with modern ML frameworks and deployed as an interactive web application.
 
 ---
-
+## DEMO Screen Shots
+<img width="1913" height="983" alt="Screenshot 2025-07-26 022320" src="https://github.com/user-attachments/assets/86c4b359-f1b2-4447-a737-99c323e80d35" />
+<img width="1915" height="955" alt="Screenshot 2025-07-26 022359" src="https://github.com/user-attachments/assets/a6d5f9a9-3de8-4a3e-9336-6873b38f4bdf" />
+<img width="1918" height="904" alt="Screenshot 2025-07-26 022444" src="https://github.com/user-attachments/assets/3ca17733-f965-44bf-a33d-54782aed7cfc" />
+<img width="1903" height="874" alt="Screenshot 2025-07-26 022557" src="https://github.com/user-attachments/assets/1e9844fa-7678-48ec-9f22-224189c381cc" />
+---
+---
 ## 🚀 Quick Start
 
 ### Prerequisites
