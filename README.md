@@ -2,8 +2,7 @@
 
 ### .H5 File link (https://drive.google.com/file/d/18_2ZUcfq25nOEghT1xw8kk3KQwr-umGu/view?usp=sharing)
 
-### PPTX (https://drive.google.com/drive/folders/1oIAViwU-1ZqyG4jFR1CZ1h2HuOM_vWFc?usp=sharing)
-
+### PPTX (https://docs.google.com/presentation/d/1S8wb5gOFTwGZYKFblgQPDwzTP39vi7zL/edit?usp=drive_link&ouid=112011770901139299951&rtpof=true&sd=true)
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
