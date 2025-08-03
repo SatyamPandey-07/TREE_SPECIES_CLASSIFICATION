@@ -1,5 +1,5 @@
 # 🌳 Tree Species Classification & Intelligence Assistant
-## .H5 link == https://drive.google.com/drive/folders/1oIAViwU-1ZqyG4jFR1CZ1h2HuOM_vWFc?usp=sharing
+## .H5 File link == https://drive.google.com/drive/folders/1oIAViwU-1ZqyG4jFR1CZ1h2HuOM_vWFc?usp=sharing
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
