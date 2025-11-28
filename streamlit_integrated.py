@@ -236,14 +236,7 @@ def main():
     
     # Sidebar with app info
     with st.sidebar:
-        st.image("https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", width=60)
-        st.title("Navigation")
-        
-        # Show statistics
-        st.metric("Total Trees", f"{len(df):,}")
-        st.metric("Unique Species", f"{df['common_name'].nunique():,}")
-        st.metric("Cities Covered", f"{df['city'].nunique():,}")
-        
+        st.title("🌳 Navigation")
         st.markdown("---")
     
     # Determine available modes based on loaded models
@@ -271,18 +264,45 @@ def main():
     if mode == "📊 Dashboard & Statistics":
         st.header("📊 Dataset Statistics & Insights")
         
-        # Top metrics
+        # Enhanced metrics display
         col1, col2, col3, col4 = st.columns(4)
         with col1:
-            st.metric("🌳 Total Trees", f"{len(df):,}")
-        with col2:
-            st.metric("🌿 Unique Species", f"{df['common_name'].nunique()}")
-        with col3:
-            st.metric("🏙️ Cities", f"{df['city'].nunique()}")
-        with col4:
-            st.metric("🗺️ States", f"{df['state'].nunique()}")
+            st.markdown("""
+                <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                            padding: 20px; border-radius: 10px; text-align: center;'>
+                    <h3 style='color: white; margin: 0;'>🌳 Total Trees</h3>
+                    <h1 style='color: white; margin: 10px 0 0 0;'>{:,}</h1>
+                </div>
+            """.format(len(df)), unsafe_allow_html=True)
         
-        st.markdown("---")
+        with col2:
+            st.markdown("""
+                <div style='background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); 
+                            padding: 20px; border-radius: 10px; text-align: center;'>
+                    <h3 style='color: white; margin: 0;'>🌿 Unique Species</h3>
+                    <h1 style='color: white; margin: 10px 0 0 0;'>{}</h1>
+                </div>
+            """.format(df['common_name'].nunique()), unsafe_allow_html=True)
+        
+        with col3:
+            st.markdown("""
+                <div style='background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); 
+                            padding: 20px; border-radius: 10px; text-align: center;'>
+                    <h3 style='color: white; margin: 0;'>🏙️ Cities</h3>
+                    <h1 style='color: white; margin: 10px 0 0 0;'>{}</h1>
+                </div>
+            """.format(df['city'].nunique()), unsafe_allow_html=True)
+        
+        with col4:
+            st.markdown("""
+                <div style='background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); 
+                            padding: 20px; border-radius: 10px; text-align: center;'>
+                    <h3 style='color: white; margin: 0;'>🗺️ States</h3>
+                    <h1 style='color: white; margin: 10px 0 0 0;'>{}</h1>
+                </div>
+            """.format(df['state'].nunique()), unsafe_allow_html=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
         
         if VISUALIZATION_AVAILABLE:
             # Top species chart
